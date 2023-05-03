@@ -1,0 +1,13 @@
+def is_palindrome(word):
+    return word.lower() == word[::-1].lower()
+
+def main():
+    word = input("Введите слово для проверки на палиндром: ")
+    
+    if is_palindrome(word):
+        print(f"Слово '{word}' является палиндромом.")
+    else:
+        print(f"Слово '{word}' не является палиндромом.")
+
+if __name__ == "__main__":
+    main()
